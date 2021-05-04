@@ -1,3 +1,5 @@
 Rails.application.routes.draw do
-  # For details on the DSL available within this file, see https://guides.rubyonrails.org/routing.html
+  get "/random_fortune_path", controller: "my_examples", action: "random_fortune_method"
+  get "/lotto_numbers_path", controller: "my_examples", action: "lotto_numbers_method"
+  get "/counter_path", controller: "my_examples", action: "counter_method"
 end
